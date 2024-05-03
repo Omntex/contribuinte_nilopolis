@@ -14393,7 +14393,7 @@ a.text-dark:focus {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #1a1b23;
+  background-color: #1a1b23 ;
   z-index: 10000;
 }
 
@@ -14420,19 +14420,19 @@ a.text-dark:focus {
 }
 
 .loader span:nth-child(1) {
-  background: #2c2763;
+  background: #0E84BF;
 }
 
 .loader span:nth-child(2) {
   left: 22px;
-  background: #df5820;
+  background: #fff;
   -webkit-animation-delay: 0.2s;
   animation-delay: 0.2s;
 }
 
 .loader span:nth-child(3) {
   top: 22px;
-  background: #df5820;
+  background: #fff;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
 }
@@ -14440,7 +14440,7 @@ a.text-dark:focus {
 .loader span:nth-child(4) {
   top: 22px;
   left: 22px;
-  background: #2c2763;
+  background: #0E84BF;
   -webkit-animation-delay: 0.6s;
   animation-delay: 0.6s;
 }
