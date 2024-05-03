@@ -91,7 +91,7 @@
                   <!--/.bg-holder-->
                   <div class="col-10 col-sm-8 col-md-9 z-index-1">
                      <h1 class="text-white fs-2 fs-sm-4 fs-xl-5 display-4">
-                        <center><img width="500" src="assets/img/logo_pmn.png"></img>
+                        <center><img width="400" src="assets/img/logo_pmn.png"></img>
                            <br> Portal do Contribuinte
                      </h1>
                      </center>
@@ -243,8 +243,7 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/11.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a href="https://enotifica.novaiguacu.rj.gov.br/"
-                        target="blank">
+                     <a href="https://enotifica.novaiguacu.rj.gov.br/" target="blank">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-envelope text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -1759,6 +1758,31 @@
       </div>
 
 
+      <div id="iarah-chat-balloon">
+         <i class="fab fa-whatsapp"></i>
+      </div>
+
+      <style>
+         #iarah-chat-balloon {
+            position: fixed;
+            bottom: 25px;
+            right: 30px;
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background-color: #25d366;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
+            cursor: pointer;
+            z-index: 9999;
+         }
+      </style>
+
    </main>
    <!-- ===============================================-->
    <!--    End of Main Content-->
@@ -1790,6 +1814,27 @@
    <script src="assets/js/theme.js"></script>
    <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw&callback=initMap"
       async></script> -->
+
+   <script>
+      // Função para abrir o popup quando o balão do WhatsApp for clicado
+      document.getElementById('iarah-chat-balloon').addEventListener('click', function () {
+         // URL do WhatsApp que você deseja abrir
+         var whatsappUrl = 'https://api.whatsapp.com/send?phone=5521983212271';
+
+         // Largura e altura do popup
+         var popupWidth = 450;
+         var popupHeight = 600;
+
+         // Calcula a posição x e y para centralizar o popup na tela
+         var xPosition = (window.innerWidth - popupWidth) / 2;
+         var yPosition = (window.innerHeight - popupHeight) / 2;
+
+       /*   // Abre o popup
+         window.open(whatsappUrl, 'popup', 'width=' + popupWidth + ', height=' + popupHeight + ', left=' + xPosition + ', top=' + yPosition); */
+
+         window.open(whatsappUrl, '_blank');
+      });
+   </script>
 
 </body>
 
