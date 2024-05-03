@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- ===============================================-->
+   <!--    Document Title-->
+   <!-- ===============================================-->
+   <title>Portal do Contribuinte - Prefeitura Municipal de Nilópolis</title>
+   <!-- ===============================================-->
+   <!--    Favicons-->
+   <!-- ===============================================-->
+   <!-- <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png"> -->
+   <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico">
+   <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
+   <meta name="theme-color" content="#ffffff">
+   <!-- ===============================================-->
+   <!--    Stylesheets-->
+   <!-- ===============================================-->
+   <link href="assets/lib/prismjs/prism.css" rel="stylesheet">
+   <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+   <link href="assets/lib/remodal/remodal.css" rel="stylesheet">
+   <link href="assets/lib/remodal/remodal-default-theme.css" rel="stylesheet">
+   <link href="assets/lib/owl.carousel/owl.carousel.css" rel="stylesheet">
+   <link href="assets/lib/lightbox2/css/lightbox.css" rel="stylesheet">
+   <link href="assets/lib/semantic-ui-accordion/accordion.min.css" rel="stylesheet">
+   <link href="assets/lib/semantic-ui-transition/transition.min.css" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+   <link href="assets/css/theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+   <div class="loading-overlay" style="display: none">
+      <!-- <div class="loading"></div> -->
+      <div class="loader">
+         <span></span>
+         <span></span>
+         <span></span>
+         <span></span>
+      </div>
+   </div>
+   <!-- ===============================================-->
+   <!--    Main Content-->
+   <!-- ===============================================-->
+   <main>
+
+
+      <div class="modal fade popup" id="imagemPopup" tabindex="-1" role="dialog" aria-labelledby="imagemPopupLabel"
+         aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+               </div>
+               <div class="modal-body d-flex justify-content-center align-items-center">
+                  <img src="assets/img/banners/banner_contribuinte.png" width="750" alt="Imagem de Popup" class="">
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!-- ============================================-->
+      <!-- Preloader ==================================-->
+      <div id="preloader" class="loaded">
+         <div class="loader"><span></span><span></span><span></span><span></span></div>
+      </div>
+      <!-- ============================================-->
+      <!-- End of Preloader ===========================-->
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+
+
+      <section class="p-0" id="home">
+         <div class="container-fluid p-0 minh-100vh">
+            <div class="position-relative px-3 w-lg-50 position-lg-absolute" id="baseContent">
+               <div class="row align-items-center minh-50vh justify-content-center py-5 minh-lg-100vh">
+                  <div class="bg-holder overlay overlay-1" style="background-image:url(assets/img/home-blur1.jpeg);">
+                  </div>
+                  <!--/.bg-holder-->
+                  <div class="col-10 col-sm-8 col-md-9 z-index-1">
+                     <h1 class="text-white fs-2 fs-sm-4 fs-xl-5 display-4">
+                        <center><img width="500" src="assets/img/logo_pmn.png"></img>
+                           <br> Portal do Contribuinte
+                     </h1>
+                     </center>
+                     <!--<h5 class="fs-0 fs-sm-1 mt-3 mt-md-5 text-white">Texto Auxiliar</h5>-->
+                  </div>
+               </div>
+            </div>
+            <div class="position-relative w-lg-50 position-lg-fixed undefined" id="gridNav">
+               <div class="row h-lg-100vh" style="overflow:auto">
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/1.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <div class="sidebar-item">
+                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/2via/index.php"
+                           target="blank">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-home text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">2º Via - Tributos</h2>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/2.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <div class="sidebar-item">
+                        <a href="https://nilopolis.sigiss.com.br/nilopolis/index.php" target="blank">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-file-signature text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">NFe</h2>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <!--data-content="taxas"-->
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/itbi/itbi_login.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">ITBI</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/4.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-newspaper text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Certidões</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/5.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://nilopolis.sigcartorios.com.br/" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-folder-open text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">SIG - Cartórios</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/6.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://nilopolis.sigbancos.com.br/" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-university text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">SIG - Bancos</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/7.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/veracidade_certidao.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-check-circle text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Veracidade de Certidão</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/8.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://nilopolis.rj.gov.br/decad/" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-user-check text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">DECAD</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/9.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/protocolo_consulta.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-newspaper text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Consulta de processos</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/10.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/aten/aten_valida.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-file-alt text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Processo Eletrônico</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/11.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://enotifica.novaiguacu.rj.gov.br/"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-envelope text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">E-Notifica</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="legislacao">
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/12.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <div class="sidebar-item">
+                        <i class="mb-2 mb-md-3 nav-icon fas fa-gavel text-white" style="font-size:35px"
+                           aria-hidden="true"></i>
+                        <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Legislação</h2>
+                     </div>
+                  </div>
+
+
+               </div>
+            </div>
+         </div>
+         <!-- end of .container-->
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <div class="page position-absolute t-0 w-100" id="legislacao">
+         <div class="row no-gutters minh-100vh">
+            <div class="col-lg-9 order-1 order-lg-0 page-content pt-6 pt-lg-0">
+               <!-- ============================================-->
+               <!-- <section> begin ============================-->
+               <section class="pt-5 pt-xl-7 pt-xxl-8">
+                  <div class="container-fluid">
+                     <div class="row justify-content-center pb-5">
+                        <div class="col-lg-10">
+                           <div class="text-center mb-5 mb-lg-6">
+                              <h2 class="fs-2 fs-sm-3"> <span class="font-weight-medium">Legislações Fiscais</h2>
+                              <hr class="hr-ornate" />
+                           </div>
+                           <div class="row">
+                              <div class="ui styled fluid accordion mt-4 border-0" data-options='{"exclusive":false}'>
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Lei Orgânica Municipal</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                       <a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Outros/Lei%20Organica.pdf"
+                                          target="blank">Lei Orgânica Municipal</a>
+                                    </p>
+                                 </div>
+                                 <h5 class="title">
+                                    <span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span>
+                                    <div class="d-inline-block mb-0">Código Tributário Municipal</div>
+                                 </h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                       <a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Outros/Codigo%20Tributario%20Municipal.docx"
+                                          target="blank">Código Tributário Municipal</a>
+                                    </p>
+                                 </div>
+                                 <h5 class="title">
+                                    <span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span>
+                                    <div class="d-inline-block mb-0">Ementário</div>
+                                 </h5>
+                                 <div class="content pl-5">
+                                    <a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Outros/Ementario.doc"
+                                       target="blank">Ementário</a>
+                                 </div>
+                                 <h5 class="title">
+                                    <span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span>
+                                    <div class="d-inline-block mb-0">Anexos e Tabelas</div>
+                                 </h5>
+                                 <div class="content pl-5">
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 01.xls"
+                                          target="_blank">Anexo I - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 02.xls"
+                                          target="_blank">Anexo I - Tab 02</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 03.xls"
+                                          target="_blank">Anexo I - Tab 03</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 04.xls"
+                                          target="_blank">Anexo I - Tab 04</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 05.xls"
+                                          target="_blank">Anexo I - Tab 05</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 06.xls"
+                                          target="_blank">Anexo I - Tab 06</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo I 06.xls"
+                                          target="_blank">Anexo I - Tab 06</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo II 01 02 03 e 04.doc"
+                                          target="_blank">Anexo II - Tab 01, 02, 03 e 04</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo III  ISSQN.doc"
+                                          target="_blank">Anexo III- ISSQN</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo IV.doc"
+                                          target="_blank">Anexo IV</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo IX 01.doc"
+                                          target="_blank">Anexo IX - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo V.doc"
+                                          target="_blank">Anexo V</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/ANEXO VI 01.doc"
+                                          target="_blank">ANEXO VI - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo VII.doc"
+                                          target="_blank">Anexo VII</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/ANEXO VIII 01.doc"
+                                          target="_blank">ANEXO VIII - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo X 01.doc"
+                                          target="_blank">Anexo X - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XI 01.doc"
+                                          target="_blank">Anexo XI - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XII 01.doc"
+                                          target="_blank">Anexo XII - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XII.doc"
+                                          target="_blank">Anexo XII - A (Lei Complementar n&#186;. 028-2010)</a><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 01.doc"
+                                          target="_blank">Anexo XIII - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 02.doc"
+                                          target="_blank">Anexo XIII - Tab 02</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 03.xls"
+                                          target="_blank">Anexo XIII - Tab 03</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 04.xls"
+                                          target="_blank">Anexo XIII - Tab 04</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 05.xls"
+                                          target="_blank">Anexo XIII - Tab 05</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIII 06.xls"
+                                          target="_blank">Anexo XIII - Tab 06</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIV 01.doc"
+                                          target="_blank">Anexo XIV - Tab 01</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XIV 02.xls"
+                                          target="_blank">Anexo XIV - Tab 02</a><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/AnexoseTabelas/Anexo XV 01.doc"
+                                          target="_blank">Anexo XV - Tab 01</a><br /></p>
+                                    <p><a href="assets/docs/LEI 3.703-2005 PGV-  Planta Generica de Valores.pdf"
+                                          target="_blank">LEI 3.703-2005 PGV- Planta Generica de Valores</a><br /></p>
+                                 </div>
+                                 <h5 class="title">
+                                    <span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span>
+                                    <div class="d-inline-block mb-0">Decretos</div>
+                                 </h5>
+                                 <div class="content pl-5">
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_SN.doc"
+                                          target="_blank">DECRETO Nº ... - Altera o mapa mensal de produtividade
+                                          fiscal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_3721_I.xls"
+                                          target="_blank">DECRETO Nº 3.721 - ANEXO I - Apuração da Gratificação de
+                                          produtividade
+                                          fiscal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_3721_II.xls"
+                                          target="_blank">DECRETO Nº 3.721 - ANEXO II - Apuração da Gratificação de
+                                          produtividade
+                                          fiscal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_3721_III.doc"
+                                          target="_blank">DECRETO Nº 3.721 - ANEXO III - Apuração da Gratificação de
+                                          produtividade
+                                          fiscal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_3721.doc"
+                                          target="_blank">DECRETO Nº 3.721 - Apuração da gratificação da produtividade
+                                          fiscal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 5847.pdf"
+                                          target="_blank">Decreto n&#186;. 5.847 - - Aprova o Regimento Interno do
+                                          Conselho de
+                                          contribuintes do Municipio</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_5887.pdf"
+                                          target="_blank">DECRETO Nº 5.887 - Avoca para o gabinete do prefeito,
+                                          processos de
+                                          licenciamento que menciona e dá outras providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_6156.pdf"
+                                          target="_blank">DECRETO Nº 6.156 - Projeto Cidadão Legal</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 6432.pdf"
+                                          target="_blank">DECRETO n&#186;. 6.432</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 6654.pdf"
+                                          target="_blank">DECRETO n&#186;. 6.654</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 6655.pdf"
+                                          target="_blank">DECRETO n&#186;. 6.655</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 6872.pdf"
+                                          target="_blank">DECRETO n&#186;. 6.872</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7015.pdf"
+                                          target="_blank">DECRETO Nº 7.015 - Calendário Fiscal Imposto Predial
+                                          Territorial Urbano -
+                                          IPTU no exercício de 2005</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7053.pdf"
+                                          target="_blank">DECRETO Nº 7.053 - Calendário Fiscal para pagamento das Taxas
+                                          de
+                                          Localização, Taxa de Coleta de Lixo...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7061.pdf"
+                                          target="_blank">DECRETO Nº 7.061 - Altera o Calendário Fiscal instituído pelo
+                                          Decreto nº
+                                          7.053</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7269.doc"
+                                          target="_blank">DECRETO Nº 7.269 - Calendário de recolhimento de tributos
+                                          municipais de Nova
+                                          Iguaçu</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7269.xls"
+                                          target="_blank">DECRETO Nº 7.269 - ANEXO</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7303.doc"
+                                          target="_blank">DECRETO Nº 7.303 - Delegação de Competência para Assinaturas
+                                          de Portarias
+                                          Referentes às Designações de Pessoal para atuar em Comissões, Grupos de
+                                          Trabalho...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7320.doc"
+                                          target="_blank">DECRETO Nº 7.320 - Procedimentos e requisitos para a
+                                          contratação e a
+                                          celebração de convênios no âmbito da administração municipal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7323.doc"
+                                          target="_blank">DECRETO Nº 7.323 - Regimento interno SEMEF</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 7326.doc"
+                                          target="_blank">DECRETO n&#186;. 7.326 - Reten&#231;&#227;o na
+                                          Fonte</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_7326.xls"
+                                          target="_blank">DECRETO Nº 7.326 - ANEXO I</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 7330.doc"
+                                          target="_blank">DECRETO n&#186;. 7.330 - Regulamenta a declara&#231;&#227;o
+                                          mensal de
+                                          servi&#231;os - DMS</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 7459.doc"
+                                          target="_blank">DECRETO n&#186;. 7.459 - Processo adm. de controle e
+                                          inventariança de bens
+                                          imóveis</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 7527.doc"
+                                          target="_blank">DECRETO n&#186;. 7.527 - Lista dos
+                                          respons&#225;veis</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 7622.doc"
+                                          target="_blank">DECRETO n&#186;. 7.622 - Institui a obrigatoriedade dos
+                                          sujeitos passivos do
+                                          munic&#237;pio de nova igua&#231;u realizar</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 8075.doc"
+                                          target="_blank">DECRETO n&#186;. 8.075 - D&#237;vida ativa</a><br /><br /></p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_8371.doc"
+                                          target="_blank">DECRETO Nº 8.371 - Altera o Decreto nº
+                                          7.321-2006</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 8547.doc"
+                                          target="_blank">DECRETO Nº 8.530. DISPÕE SOBRE MEDIDAS PARA O INCREMENTO DA
+                                          COBRANÇA DE CRÉDITOS INSCRITOS EM DÍVIDA ATIVA</a><br /><br />
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 8547.doc"
+                                          target="_blank">DECRETO n&#186;. 8.547 - Disciplina a emiss&#231;o de nota
+                                          fiscal de
+                                          servi&#231;os eletr&#226;nica</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 8681.doc"
+                                          target="_blank">DECRETO n&#186;. 8.681 - Estabelece normas a serem observadas
+                                          na contratação
+                                          de obras</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_8682.doc"
+                                          target="_blank">DECRETO Nº 8.682 - Altera o Decreto nº 8.530</a><br><br /></p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 8716.doc"
+                                          target="_blank">DECRETO n&#186;. 8.716 - Regula o processo administrativo na
+                                          Administração
+                                          Municipal</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 9044.doc"
+                                          target="_blank">DECRETO n&#186;. 9.044 - Disp&#245;e sobre o tratamento
+                                          diferenciado ao
+                                          microempreendedor individual - MEI</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 9051.doc"
+                                          target="_blank">DECRETO n&#186;. 9.051 - Regulamenta o disposto no artigo
+                                          296-e da lei
+                                          complementar 3411-02</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 9629.doc"
+                                          target="_blank">DECRETO n&#186;. 9.629 - Aprova normas para
+                                          implementa&#231;&#231;o da lei
+                                          n&#186; 4.210-2012 - atualizada</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 9740.doc"
+                                          target="_blank">DECRETO n&#186;. 9.740 - Delega compet&#234;ncia
+                                          semef</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 9788.doc"
+                                          target="_blank">DECRETO n&#186;. 9.788 - Altera o in&#237;cio da vig&#234;ncia
+                                          do programa
+                                          REFIS - Nova Igua&#231;u</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10085.doc"
+                                          target="_blank">DECRETO n&#186;. 10.085 - Redu&#231;&#227;o materiais
+                                          obra</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10336.doc"
+                                          target="_blank">DECRETO n&#186;. 10.336</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10350.doc"
+                                          target="_blank">DECRETO n&#186;. 10.350 - CATRINI 2015</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10422.docx"
+                                          target="_blank">DECRETO n&#186;. 10.422 - Dispõe sobre o processo de
+                                          compensação
+                                          tributária</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10500.docx"
+                                          target="_blank">DECRETO n&#186;. 10.500 - Alteração compensação
+                                          empresas</a><br><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10568.doc"
+                                          target="_blank">DECRETO n&#186;. 10.568 - Reg. Nota Fiscal
+                                          eletrônica</a><br><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto 10676.docx"
+                                          target="_blank">DECRETO n&#186;. 10.676 - Regulamentação a dação em pagamento
+                                          de bens
+                                          imóveis como forma de extinção tributária no município de Nova
+                                          Iguaçu</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto.10856.pdf"
+                                          target="_blank">DECRETO n&#186;. 10.856 - Estabelece o regimento interno na
+                                          estrutura da
+                                          secretaria de economia e finanças e dá outras providências</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 109432017.pdf"
+                                          target="_blank">DECRETO n&#186;. 10.943 - Regulamenta a lei complementar nº
+                                          054/2017,
+                                          que dispõe sobre o programa de incentivo à regularização fiscal com a fazenda
+                                          pública
+                                          do município de Nova Iguaçu (REFIS) – programa nome limpo .</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 109762017.pdf"
+                                          target="_blank">DECRETO n&#186;. 10.976 - Prorroga prazo do programa de
+                                          incentivo à
+                                          regularização fiscal com a fazenda Pública do município de Nova
+                                          Iguaçu</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 110132017.pdf"
+                                          target="_blank">DECRETO n&#186;. 11.013 - Prorroga prazo do programa de
+                                          incentivo à
+                                          regularização fiscal com a fazenda pública do município de Nova
+                                          Iguaçu</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11076.doc"
+                                          target="_blank">DECRETO Nº 11.076 - Procedimentos de tributação do ISSQN para
+                                          os serviços de
+                                          construção civil</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11162.pdf"
+                                          target="_blank">DECRETO Nº 11.162 - Regulamenta Lei complementar Nº 047-2015
+                                          que dispõe
+                                          sobre tratamento diferenciado, simplificado e favorecido às
+                                          microempresas...</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11163.pdf"
+                                          target="_blank">DECRETO Nº 11.163 - Regulamenta os artigos 160-A, 160-B e
+                                          160-C da Lei
+                                          Complementar 3.411-2002</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11289.pdf"
+                                          target="_blank">DECRETO Nº 11.289 - Lançamento do imposto sobre transmissão de
+                                          bens
+                                          imóveis</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11313.pdf"
+                                          target="_blank">DECRETO Nº 11.313 - Institui procedimentos a serem aplicados
+                                          na Fiscalização
+                                          Tributária</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11321.pdf"
+                                          target="_blank">DECRETO Nº 11.321 - Regulamenta as disposições do ISSQN,
+                                          contidas na LC Nº
+                                          3.411- 2002, alterando o gerenciamento eletrônico do ISSQN , sistema
+                                          eletrônico de
+                                          gestão...</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/DECRETO_11546.pdf"
+                                          target="_blank">DECRETO Nº 11.546 - Altera o Decreto nº 11.289 - 2018 e dá
+                                          outras
+                                          providências</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 118172019.pdf"
+                                          target="_blank">DECRETO n&#186;. 11.817 - Regulamenta a Lei 4.947,
+                                          estabelecendo as diretrizes
+                                          para o reconhecimento da isenção do ITBI para os imóveis integrante do
+                                          programa federal Casa
+                                          Verde e Amarela</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 117832019.pdf"
+                                          target="_blank">DECRETO n&#186;. 11.783 - 2019 - Regulamenta a lei
+                                          complementar nº 071
+                                          de 09 de outubro de 2019, dispondo sobre o programa concilia Nova
+                                          Iguaçu/2019.</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 122542021.pdf"
+                                          target="_blank">DECRETO n&#186;. 12.254 - 2021 - Prorroga o prazo para
+                                          renovação do benefício
+                                          de isenção de iptu para o biênio 2021-2022</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/decreto 124992021.pdf"
+                                          target="_blank">DECRETO n&#186;. 12.499 - 2021 - Regulamenta a Lei 4.947,
+                                          estabelecendo
+                                          as diretrizes para o reconhecimento da isenção do ITBI para os imóveis
+                                          integrantes do
+                                          programa federal casa verde e amarela</a><br><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto%2012.642%20-%20Determina%20a%20Revis%C3%A3o%20de%20todos%20os%20Atos%20de%20Imunidade%20de%20ITBI%20%20-%20SEMEF%2008-3-2022.pdf"
+                                          target="_blank"> DECRETO N.º 12.642 - Determina a Revisão de todos os Atos de
+                                          Imunidade de
+                                          ITBI sobre transmissão de bens ou direitos incorporados ao patrimônio de
+                                          pessoa jurídica em realização de capital, expedidos desde o exercício de 2014
+                                          e dá outras providências.</a><br><br />
+
+                                    <p><a href="assets/docs/decreto 126862022.pdf" target="_blank">DECRETO n&#186;.
+                                          12.686 - 2022 - Consolida a Legislação Tributária e as
+                                          disposições relativas ao IPTU, ITBI, ISSQN, COSIP e Taxas do Município de Nova
+                                          Iguaçu.</a><br><br />
+                                    </p>
+                                    <p><a href="assets/docs/decreto_132702023.pdf" target="_blank">DECRETO n&#186;.
+                                          13.270 - 2023 - Consolida a Legislação Tributária e as disposições relativas
+                                          ao IPTU, ITBI, ISSQN, COSIP e Taxas do Município de Nova Iguaçu.</a><br><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto%2013.288%20-%20Revoga%20o%20inciso%20II%20Par.%202%20do%20art.%205%20do%20Decreto%2011.289.pdf"
+                                          target="_blank">DECRETO Nº 13.288 DE 20 DE JUNHO DE 2023 - ALTERA O DECRETO
+                                          11.289 DE 26 DE ABRIL
+                                          DE 2018 E DÁ OUTRAS PROVIDÊNCIAS.</a><br><br />
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto%2013.310%20-%20Consolida%20a%20Legislação%20Tributária%20relativa%20ao%20ITBI.pdf"
+                                          target="_blank">DECRETO N° 13.310, DE 13 DE JULHO DE 2023.
+                                          - Consolida a Legislação Tributária relativa ao ITBI - Imposto sobre a
+                                          transmissão "inter vivos".</a><br><br />
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/decretos/Decreto%2013.311%20-%20Consolida%20a%20Legislação%20Tributária%20relativa%20ao%20IPTU.pdf"
+                                          target="_blank">DECRETO N° 13.311, DE 13 DE JULHO DE 2023.
+                                          - Consolida a Legislação Tributária relativa ao IPTU.</a><br><br />
+                                 </div>
+                                 <h5 class="title">
+                                    <span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span>
+                                    <div class="d-inline-block mb-0">Leis Complementares</div>
+                                 </h5>
+                                 <div class="content pl-5">
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 006.doc"
+                                          target="_blank">Lei Complementar n&#186;. 006 - Plano Diretor</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC007.pdf"
+                                          target="_blank">LC 007 - 1997 - Código Tributário</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 009.doc"
+                                          target="_blank">Lei Complementar n&#186;. 009 - C&#243;digo Tribut&#225;rio
+                                          Municipal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 010.doc"
+                                          target="_blank">Lei Complementar n&#186;. 010 - ISS Municipal com base na Lei
+                                          Fed
+                                          116</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 011.doc"
+                                          target="_blank">Lei Complementar n&#186;. 011 - Institui a taxa de
+                                          fiscalização do veículo
+                                          de transporte de passageiros FLV</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 012.doc"
+                                          target="_blank">Lei Complementar n&#186;. 012 - Lei Orgânica PGM</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 014.doc"
+                                          target="_blank">Lei Complementar n&#186;. 014 - Codigo Tribut&#225;rio
+                                          Municipal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC015.doc"
+                                          target="_blank">LC 015 - 2005 - Dá nova redação, inclui e altera dispositivos
+                                          da LC nº
+                                          3.411-02, que dispõe sobre o Código Tributário do Município de Nova
+                                          Iguaçu</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 016.doc"
+                                          target="_blank">Lei Complementar n&#186;. 016 - Altera a lei complementar
+                                          006-97 - plano
+                                          diretor de des urbano e sustent</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 017.doc"
+                                          target="_blank">Lei Complementar n&#186;. 017 - Tfv e
+                                          isen&#231;&#245;es</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 018.doc"
+                                          target="_blank">Lei Complementar n&#186;. 018 - Recadastramento
+                                          mobili&#225;rio</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 019.doc"
+                                          target="_blank">Lei Complementar n&#186;. 019 - 10% ISS e
+                                          taxas</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 020.doc"
+                                          target="_blank">Lei Complementar n&#186;. 020 - TFL 50% e TCA</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 021.doc"
+                                          target="_blank">Lei Complementar n&#186;. 021 - COSIP</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 022.doc"
+                                          target="_blank">Lei Complementar n&#186;. 022 - Altera dispositivos da lei
+                                          complementar
+                                          n&#186;. 022</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 023.doc"
+                                          target="_blank">Lei Complementar n&#186;. 023 - D&#225; nova reda&#231;&#231;o
+                                          aos artigos
+                                          615 e 713 do c&#243;digo tribut&#225;rio do munic&#237;pio de nova
+                                          igua&#231;u</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 024.doc"
+                                          target="_blank">Lei Complementar n&#186;. 024 - Acrescenta dispositivos a LC
+                                          10</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 025.doc"
+                                          target="_blank">Lei Complementar n&#186;. 025 - Altera LC
+                                          3.411</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 027.doc"
+                                          target="_blank">Lei Complementar n&#186;. 027 - Altera LO PGM</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 028.doc"
+                                          target="_blank">Lei Complementar n&#186;. 028 - Altera dispositivos da lei
+                                          complementar
+                                          n&#186; 3411-2002</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 030.doc"
+                                          target="_blank">Lei Complementar n&#186;. 030 - Altera e revoga dispositivos
+                                          na lei
+                                          complementar n&#186; 3.411</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 031.doc"
+                                          target="_blank">Lei Complementar n&#186;. 031 - Altera reda&#231;&#227;o dos
+                                          artigos 149 e
+                                          156 da lei 2.112-91</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 033.doc"
+                                          target="_blank">Lei Complementar n&#186;. 033 - Acrescenta artigo Lei
+                                          2.112-1991</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 034.doc"
+                                          target="_blank">Lei Complementar n&#186;. 034 - Revoga os artigos 322 a 335 do
+                                          c&#243;digo
+                                          tribut&#225;rio municipal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 038.doc"
+                                          target="_blank">Lei Complementar n&#186;. 038 - Altera o item 11 do anexo x da
+                                          lei
+                                          complementar n&#186; 28</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 039.doc"
+                                          target="_blank">Lei Complementar n&#186;. 039 </a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 043.doc"
+                                          target="_blank">Lei Complementar n&#186;. 043 - Altera o Código Tributário
+                                          Municipal</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 044.docx"
+                                          target="_blank">Lei Complementar n&#186;. 044 - Altera a Lei Complementar
+                                          n&#186;. 39 de 19
+                                          de novembro de 2014 e dá outras providências</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 046.docx"
+                                          target="_blank">Lei Complementar n&#186;. 046 - Altera dispositivos do código
+                                          tributário
+                                          municipal que tratam da contribuição para o custeio da iluminação pública -
+                                          COSIP</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei Complementar 047.doc"
+                                          target="_blank">Lei Complementar n&#186;. 047 - Dispõe sobre o tratamento
+                                          jurídico
+                                          diferenciado, simplificado e favorecido às microempresas e empresas de pequeno
+                                          porte</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC054.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 054 - 2017 - Institui o Programa de
+                                          Incentivo à
+                                          regularização fiscal com a Fazenda Pública do Município de Nova Iguaçu (REFIS)
+                                          – PROGRAMA
+                                          NOME LIMPO.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC055.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 055 - 2017 - Altera a LC nº
+                                          3.411-02, que dispõe
+                                          sobre o ISSQN ? Imposto sobre serviço de qualquer natureza, e dá outras
+                                          providências.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC057.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 057 - 2017 - Altera a LC nº
+                                          3.411-2002 e dá outras
+                                          providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC058.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 058 - 2017 - Altera a LC nº
+                                          3.411-2002 e dá outras
+                                          providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC063.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 063 - 2018 - Altera dispositivos da
+                                          LC nº
+                                          3.411-02, inclui o art. 662-A para instituir o domicílio fiscal eletrônico do
+                                          contribuinte...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC068.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 068 - 2019 - Regulamenta os
+                                          procedimentos de
+                                          reconhecimento de imunidade tributária, de isenção e de não incidência,
+                                          referentes aos
+                                          tributos municipais, e dá outras providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC069.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 069 - 2019 - Altera o CTM para
+                                          permitir que
+                                          contribuintes idosos que tenha débitos possam ter reconhecida a isenção de
+                                          IPTU</a>
+                                       <br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC071.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 071 - 2019 - Cria o programa
+                                          concilia Nova
+                                          Iguaçu/2019 com o município de Nova Iguaçu.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC072.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 072 - 2019 - Altera e insere
+                                          dispositivos na LC
+                                          3.411 de 02 de Novembro de 2002 e LC de 19 de dezembro de 2003, cria o
+                                          cadastro de empresas
+                                          prestadoras de outro município.</a><br /><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei%20Complementar%20077%20-%20Revoga%20artigos%20da%20Lei%20Complementar%2075.2019.pdf"
+                                          target="_blank">LEI COMPLEMENTAR Nº 077 DE 12 DE FEVEREIRO DE 2021. REVOGA A
+                                          LEI COMPLEMENTAR Nº 75 DE 20 DE DEZEMBRO DE 2019 E DÁ OUTRAS
+                                          PROVIDÊNCIAS.</a><br /><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC078.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 078 - 2021 - Altera o parágrafo
+                                          único do artigo
+                                          543 da Lei Complementar nº 3.411, de 2002, que institui o sistema tributário
+                                          municipal e
+                                          as normas gerais de direito tributário aplicáveis ao
+                                          município.</a><br /><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC078.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 078 - 2021 - Altera o parágrafo
+                                          único do artigo
+                                          543 da Lei Complementar nº 3.411, de 2002, que institui o sistema tributário
+                                          municipal e
+                                          as normas gerais de direito tributário aplicáveis ao
+                                          município.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/Lei%20Complementar%2085%20-%20Altera%20dispositivos%20da%20Lei%20Complementar%203.411%20de%201º%20de%20novembro%20de%202002.pdf"
+                                          target="_blank">LEI COMPLEMENTAR N. º 85 DE 15 DE SETEMBRO DE 2022. Altera
+                                          dispositivos da Lei Complementar nº.3.411 de 1º de novembro de 2002 - Código
+                                          Tributário Municipal e dá outras providências.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC123.doc"
+                                          target="_blank">Lei Complementar n&#186;. 123 - 2006 - Institui o Estatuto
+                                          Nacional da
+                                          Microempresa e da Empresa de Pequeno Porte, altera dispositivos das Leis nºs
+                                          8.212 e 8.213,
+                                          ambas de 1991...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC127.doc"
+                                          target="_blank">Lei Complementar n&#186;. 127 - 2007 - Altera a Lei
+                                          Complementar nº
+                                          123-06</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC3411_1.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 3.411 - 2002 - Código Tributário
+                                          Municipal de Nova
+                                          Iguaçu</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisComplementares/LC3411_2.pdf"
+                                          target="_blank">Lei Complementar n&#186;. 3.411 - 2002 - Dispõe sobre o
+                                          sistema tributário
+                                          municipal e as normas gerais de direito tributário aplicáveis ao
+                                          Município</a><br /><br />
+                                    </p>
+                                 </div>
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Leis Ordinárias</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 2112.doc"
+                                          target="_blank">Lei n&#186;. 2.112 - C&#243;digo municipal de
+                                          posturas</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.378.pdf"
+                                          target="_blank">LEI Nº 2.378 - 1992 - Dispõe sobre o Estatuto dos Funcionários
+                                          do
+                                          Município de Nova Iguaçu</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.787.pdf"
+                                          target="_blank">LEI Nº 2.787 - 1997 - Altera o artigo 165 da Lei 2.378-92 e dá
+                                          outras
+                                          providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.872.pdf"
+                                          target="_blank">LEI Nº 2.872 - 1997 - Concede incentivos fiscais à implantação
+                                          e ampliação
+                                          de industrias e empresas prestadoras de serviços no município</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 2801.doc"
+                                          target="_blank">Lei n&#186;. 2.801 - Altera a reda&#231;&#227;o da lei nø 720,
+                                          de 09 de
+                                          dezembro de 1983</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 2866.doc"
+                                          target="_blank">Lei n&#186;. 2.866 - Mais valia</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 2872.doc"
+                                          target="_blank">Lei n&#186;. 2.872 - Incentivo fiscal ISS</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 2882.doc"
+                                          target="_blank">Lei n&#186;. 2.882 - Lei de uso e
+                                          ocupa&#231;&#227;o</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.954.pdf"
+                                          target="_blank">LEI Nº 2.954 - 1998 - Atualização dos valores das multas que
+                                          trata o art.
+                                          286 da Resolução nº 1.514-64 que aprova o Código de obras</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.960.doc"
+                                          target="_blank">LEI Nº 2.960 - 1998 - Ccondições para o habite-se das obras na
+                                          cidade,
+                                          ligação dos serviços das concessionárias de energia elétrica,
+                                          água...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/2.961.doc"
+                                          target="_blank">LEI Nº 2.961 - 1998 - Aprova a Lei de parcelamento do uso do
+                                          solo
+                                          urbano</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3009.doc"
+                                          target="_blank">Lei n&#186;. 3.009 - Altera&#231;&#227;o da lei
+                                          2872</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.036.pdf"
+                                          target="_blank">LEI Nº 3.036 - 1999 - Estabelece medidas e incentivos visando
+                                          a
+                                          participação do Município no Programa de Arrendamento Residencial
+                                          (PAR)</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.041.pdf"
+                                          target="_blank">LEI Nº 3.041 - 1999 - Aprova o regulamento de limpeza urbana
+                                          da
+                                          cidade</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.051.pdf"
+                                          target="_blank">LEI Nº 3.051 - 1999 - Cria o Projeto Centro das
+                                          Cores...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.052.pdf"
+                                          target="_blank">LEI Nº 3.052 - 1999 - Legalização predial e o reconhecimento
+                                          de
+                                          modificações e acréscimos em edificações existentes</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.068.pdf"
+                                          target="_blank">LEI Nº 3.068 - 2000 - Autoriza o Poder Executivo a dispor
+                                          sobre a isenção
+                                          de tributos municipais</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.120.doc"
+                                          target="_blank">LEI Nº 3.120 - 2000 - Institui o Código de Obras e Edificações
+                                          da
+                                          Cidade</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.121.doc"
+                                          target="_blank">LEI Nº 3.121 - 2000 - Altera a lei 2.961-98 ? lei de
+                                          parcelamento do solo
+                                          urbano - visando a produção de parcelamentos de pequeno porte</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.122.doc"
+                                          target="_blank">LEI Nº 3.122 - 2000 - Cria normas e incentivos à produção
+                                          imobiliária de
+                                          empreendimentos do tipo vila</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.261.doc"
+                                          target="_blank">LEI Nº 3.261 - 2001 - Revisa o plano diretor de
+                                          desenvolvimento
+                                          sustentável</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3268.doc"
+                                          target="_blank">Lei n&#186;. 3.268 - Compensa&#231;&#227;o de ISS da rede de
+                                          ensino</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3271.doc"
+                                          target="_blank">Lei n&#186;. 3.271 - Estatuto municipal das
+                                          microempresas</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.276.pdf"
+                                          target="_blank">LEI Nº 3.276 - 2001 - Autoriza o Poder Executivo a criar um
+                                          Mercado
+                                          Popular no centro da cidade de Nova Iguaçu</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3280.doc"
+                                          target="_blank">Lei n&#186;. 3.280 - Incentivo fiscal -
+                                          logistica</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.293.doc"
+                                          target="_blank">LEI Nº 3.293 - 2001 - Altera dispositivos da Lei nº
+                                          3.120-00</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.317.pdf"
+                                          target="_blank">LEI Nº 3.317 - 2001 - Institui a Contribuição de Melhoria para
+                                          Obras e
+                                          Serviços de Iluminação Pública ? COMSIP</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3319.doc"
+                                          target="_blank">Lei n&#186;. 3.319 - Regulariza&#231;&#227;o e
+                                          legaliza&#231;&#227;o de
+                                          constru&#231;&#245;es e modifica&#231;&#245;es</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3447.doc"
+                                          target="_blank">Lei n&#186;. 3.447 - Servi&#231;os públicos n&#227;o
+                                          compuls&#243;rios</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.471.pdf"
+                                          target="_blank">LEI Nº 3.471 - 2003 - Altera o Anexo VII da Lei Complementar
+                                          nº
+                                          3.411-02</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3494.doc"
+                                          target="_blank">Lei n&#186;. 3.494 - Gratuidade transporte deficientes e
+                                          doentes
+                                          crônicos</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3527.doc"
+                                          target="_blank">Lei n&#186;. 3.527 - Lei de estacionamentos</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3651.jpg"
+                                          target="_blank">Lei n&#186;. 3.651</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.688.pdf"
+                                          target="_blank">LEI Nº 3.688 - 2005 - Autoriza o Poder Executivo a contratar
+                                          empréstimo
+                                          externo com Instituição Financeira Internacional</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3690 I.doc"
+                                          target="_blank">Lei n&#186;. 3.690 - Cadast empres espont&#226;neo e de
+                                          of&#237;cio, inst
+                                          o regime simplif para pag dos tributos munic, emp fundo de
+                                          quintal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3690 II.doc"
+                                          target="_blank">Lei n&#186;. 3.690 - Simples municipal</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3691 I.doc"
+                                          target="_blank">Lei n&#186;. 3.691 - Remiss&#227;o do d&#233;bito do IPTU
+                                          03-10-2005
+                                          (correto e revisado)</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3691 II.doc"
+                                          target="_blank">Lei n&#186;. 3.691 - Remiss&#227;o do d&#233;bito de
+                                          IPTU</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3692.doc"
+                                          target="_blank">Lei n&#186;. 3.692 - Recadastramento
+                                          imobili&#225;rio</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3703.doc"
+                                          target="_blank">Lei n&#186;. 3.703 - Altera CTM</a><br><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.720.pdf"
+                                          target="_blank">LEI Nº 3.720 - 2005 - Disciplina a carreira, as classes e os
+                                          cargos
+                                          públicos de Auditor Fiscal do Tesouro Municipal e cria a gratificação por
+                                          produtividade</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.722.pdf"
+                                          target="_blank">LEI Nº 3.722 - 2005 - Altera a estrutura da Secretaria
+                                          Municipal de
+                                          Economia e Finanças ? SEMEF</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.723.pdf"
+                                          target="_blank">LEI Nº 3.723 - 2005 - Delegação da prestação dos serviços de
+                                          transporte
+                                          coletivo de âmbito municipal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.726.pdf"
+                                          target="_blank">LEI Nº 3.726 - 2005 - Autoriza o Poder Executivo a
+                                          disponibilizar
+                                          incentivos às empresas que vierem a se instalar no município</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.731.docx"
+                                          target="_blank">LEI Nº 3.731- 2005 - Institui o programa 'Passe Escola',
+                                          autoriza a
+                                          implementação do sistema de bilhetagem eletrônica no serviço de transporte
+                                          coletivo</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.754.pdf"
+                                          target="_blank">LEI Nº 3.754 - 2005 - Autoriza o Poder Executivo Municipal a
+                                          dispor sobre
+                                          a isenção de tributos municipais aos Templos Religiosos</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3756.docx"
+                                          target="_blank">Lei n&#186;. 3.756 - Inclui os estudantes da rede estadual no
+                                          Passe
+                                          Escola</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.763.pdf"
+                                          target="_blank">LEI Nº 3.763 - 2006 - Autoriza o Poder Executivo a contratar
+                                          financiamento
+                                          junto à União, através da Caixa Econômica Federal...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.786.pdf"
+                                          target="_blank">LEI Nº 3.786 - 2006 - Prorroga o prazo de aplicação dos
+                                          benefícios para o
+                                          cadastramento empresarial espontâneo - Projeto Seja Legal</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3814.doc"
+                                          target="_blank">Lei n&#186;. 3.814 - Altera a lei n&#186; 3.691, de 11 de
+                                          outubro de 2005,
+                                          prorrogando o prazo previsto no art. 1&#186; por mais 360 dias</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3815 I.doc"
+                                          target="_blank">Lei n&#186;. 3.815 - Institui poli&#237;tica de incentivos
+                                          fiscais -
+                                          Bairro Escola</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3815 II.doc"
+                                          target="_blank">Lei n&#186;. 3.815 - Institui poli&#237;tica de incentivos
+                                          fiscais</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.820.pdf"
+                                          target="_blank">LEI Nº 3.820 - 2006 - Altera a Lei nº 3.739-05 que dispõe
+                                          sobre o plano
+                                          plurianual para o período 2006-2009</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.846.pdf"
+                                          target="_blank">LEI Nº 3.846 - 2007 - Autoriza o Poder Executivo a contratar e
+                                          equipar os
+                                          acordos e parcelamentos assumidos da dívida fundada interna por meio de
+                                          operação de
+                                          crédito</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.875.pdf"
+                                          target="_blank">LEI Nº 3.875 - 2007 - Altera o Artigo 3º da Lei nº
+                                          3.688-05</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.878.pdf"
+                                          target="_blank">LEI Nº 3.878 - 2007 - Autoriza o Município a ceder o direito
+                                          ao
+                                          recebimento do fluxo financeiro oriundo do pagamento dos débitos tributários
+                                          ou
+                                          não-tributários...</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.895.doc"
+                                          target="_blank">LEI Nº 3.895 - 2007 - Revoga dispositivos da Lei nº
+                                          3.796-06</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3900.doc"
+                                          target="_blank">Lei n&#186;. 3.900 - Concede isen&#231;&#227;o do imposto
+                                          sobre a
+                                          transmISS&#231;o inter-vivos de bens imàveis nas hip&#243;teses que
+                                          menciona</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3901.doc"
+                                          target="_blank">Lei n&#186;. 3.901 - Disp&#245;e sobre as condi&#231;&#245;es
+                                          para a
+                                          concess&#231;o de benef&#237;cios fiscais em favor de empresas
+                                          cadastradas</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3902.doc"
+                                          target="_blank">Lei n&#186;. 3.902 - Disp&#245;e sobre as condi&#231;&#245;es
+                                          para a
+                                          remISS&#227;o do IPTU e das taxas imobili&#225;rias em benef&#237;cio de
+                                          pessoas de baixa
+                                          renda</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/3.929.pdf"
+                                          target="_blank">LEI Nº 3.929 - 2008 - Altera dispositivos da Lei
+                                          3.878-07</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 3984.doc"
+                                          target="_blank">Lei n&#186;. 3.984 - Concede isen&#231;&#227;o do imposto
+                                          sobre a
+                                          transmISS&#227;o de bens im&#243;veis</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4028.doc"
+                                          target="_blank">Lei n&#186;. 4.028 - Concede isen&#231;&#227;o de tributo
+                                          municipal
+                                          incidente sobre a execu&#231;&#227;o de obras de constru&#231;&#227;o civil
+                                          minha casa
+                                          minha vida</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4202.doc"
+                                          target="_blank">Lei n&#186;. 4.202 - Disp&#245;e sobre a suspenso e o
+                                          cancelamento de
+                                          alvar&#225;s de hotis e similares</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4206.doc"
+                                          target="_blank">Lei n&#186;. 4.206 - Acrescenta artigo lei 2.1121991, que
+                                          disp&#245;e
+                                          sobre o càdigo municipal de posturas, e cria o alvar&#225;
+                                          simplificado</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4209.doc"
+                                          target="_blank">Lei n&#186;. 4.209 - Inclui par&#225;grafo único ao artigo 827
+                                          do càdigo
+                                          tribut&#225;rio do munic&#237;pio de Nova Igua&#231;u</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4210.doc"
+                                          target="_blank">Lei n&#186;. 4.210 - Disp&#245;e sobre a anistia de multas e
+                                          juros</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4225.doc"
+                                          target="_blank">Lei n&#186;. 4.225 - Concede isen&#231;&#227;o de IPTU para
+                                          im&#243;veis
+                                          destinados ao funcionamento de templos religiosos e d&#225; outras
+                                          provid&#234;ncias</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4229.doc"
+                                          target="_blank">Lei n&#186;. 4.229 - Minha casa minha vida</a><br /><br /></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4240.doc"
+                                          target="_blank">Lei n&#186;. 4.240 - Autoriza a procuradoria geral do
+                                          munic&#237;pio a
+                                          n&#227;o promover a inscri&#231;&#227;o e a cobran&#231;a judicial de
+                                          cr&#233;ditos
+                                          tribut&#225;rios antiecon&#244;micos</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.266.pdf"
+                                          target="_blank">LEI Nº 4.266 - 2013 - Institui o fundo especial de Dívida
+                                          ativa</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei 4438.docx"
+                                          target="_blank">Lei n&#186;. 4.438 - Gratuidade do transporte dos doentes
+                                          crônicos</a><br><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.785.pdf"
+                                          target="_blank">LEI Nº 4.785 - 2018 - Altera a Lei nº 4229-13</a><br /><br />
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/Lei%204.662%20-%20AUTORIZA%20O%20P.%20EXECUTIVO%20A%20CONCEDER%20ISEN%C3%87%C3%83O%20SOB%20CONDI%C3%87%C3%83O%20ONEROSA,%20ISSQN.pdf"
+                                          target="_blank">LEI Nº 4.662 - 2017 - AUTORIZA O PODER EXECUTIVO A CONCEDER
+                                          ISENÇÃO SOB CONDIÇÃO ONEROSA, DO IMPOSTO DE TRANSMISSÃO DE BENS IMÓVEIS
+                                          LOCALIZADOS NO MUNICÍPIO DE NOVAIGUAÇU</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.807.pdf"
+                                          target="_blank">LEI Nº 4.807 - 2018 - Dispõe sobre concessão de remissão e
+                                          anistia nos
+                                          casos em que especifica</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.862.pdf"
+                                          target="_blank">LEI Nº 4.862 - 2019 - Revoga a Lei 3.815 de 29 de dezembro de
+                                          2006, e dá
+                                          outras providências</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.872.pdf"
+                                          target="_blank">LEI Nº 4.872 - 2019 - Altera a Lei 4.229 de 14 de janeiro de
+                                          2013, dispõe
+                                          sobre incentivos fiscais aos imóveis beneficiados pelo Programa Minha Casa
+                                          Minha Vida e
+                                          dá outras providências.</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/4.947.pdf"
+                                          target="_blank">LEI Nº 4.947 - 2021 - Institui benefícios fiscais para imóveis
+                                          adquiridos por meio do programa federal Casa Verde e Amarela</a><br /><br />
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/leisOrdinarias/6.766.doc"
+                                          target="_blank">LEI Nº 6.766 - 1979 - Dispõe sobre o parcelamento do solo
+                                          urbano</a><br />
+                                    </p>
+                                    </p>
+                                 </div>
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Instruções Normativas</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_001_SEMEF_2010.xls"
+                                          target="_blank">IN 001 - SEMEF - 2010 - GUIA - Informações sobre transições
+                                          imobiliárias</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_001_SEMEF_2010.doc"
+                                          target="_blank">IN 001 - SEMEF - 2010 - Institui o formulário de Informações
+                                          de Transações
+                                          Imobiliárias</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_001_SEMEF_2016.pdf"
+                                          target="_blank">IN 001 - SEMEF - 2016 - Dispõe sobre a Nota Fiscal de Serviços
+                                          Eletrônica-NFS-e, Documentos Gerenciais...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_001_SEMEF_2017.pdf"
+                                          target="_blank">IN 001 - SEMEF - 2017 - Dispõe sobre o regulamento do
+                                          atendimento do
+                                          Plantão Fiscal desta Secretaria</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_001_SEMEF_2019.pdf"
+                                          target="_blank">IN 001 - SEMEF - 2019 - Estabelece procedimentos e prazos dos
+                                          atos
+                                          praticados sobre cadastro mobiliário e legalização empresarial, estabelece a
+                                          centralização
+                                          do atendimento empresarial...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_002_SEMEF_2010.doc"
+                                          target="_blank">IN 002 - SEMEF - 2010 - Recepção e análise dos documentos que
+                                          instruem os
+                                          referidos pedidos de emissão da guia de ITBI</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/INSTRUÇÃO%20NORMATIVA%20N%20002%20SEMEF%202010.pdf"
+                                          target="_blank">INSTRUÇÃO NORMATIVA N.º 002 /SEMEF/ 2010 </a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_002_SEMEF_2017.pdf"
+                                          target="_blank">IN 002 - SEMEF - 2017 - Regula, no âmbito da Secretaria
+                                          Municipal de
+                                          Economia e Finanças, o Decreto 11.076 - 2017 e dá providencias</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_003_SEMEF_2010.xls"
+                                          target="_blank">IN 003 - SEMEF - 2010 - FORMULÁRIO de informações de serviços
+                                          contratados</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_003_SEMEF_2010.doc"
+                                          target="_blank">IN 003 - SEMEF - 2010 - Institui o formulário de Informações
+                                          de Serviços
+                                          Contratados</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_004_SEMEF_2010.doc"
+                                          target="_blank">IN 004 - SEMEF - 2010 - Sem efeito</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_005_SEMEF_2010.jpg"
+                                          target="_blank">IN 005 - SEMEF - 2010 - Altera o cronograma da Resolução nº
+                                          11-2010</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_006_SEMEF_2010.doc"
+                                          target="_blank">IN 006 - SEMEF - 2010 - Prorroga o prazo para a emissão de
+                                          Nota Fiscal
+                                          Eletrônica ? NFSe para contribuintes prestadores de serviço ainda não
+                                          credenciados</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_007_SEMEF_2010.doc"
+                                          target="_blank">IN 007 - SEMEF - 2010 - Casos em que as opções pelo Sistema
+                                          Simplificado
+                                          de pagamento de Tributos, tiveram o seu indeferimento ... deverão ser
+                                          reconsiderados pelo
+                                          órgão responsável...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/InstrucaoNormativa/IN_PGM_SEMEF_2017.doc"
+                                          target="_blank">IN CONJUNTA 01 PGM - SEMEF - 2017 - Fixa prazo final para
+                                          adesão ao
+                                          programa de incentivo à regularização fiscal com a Fazenda Pública do
+                                          município de Nova
+                                          Iguaçu (REFIS)</a><br><br>
+                                    </p>
+                                    </p>
+                                 </div>
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Resoluções</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_001_2006.doc"
+                                          target="_blank">RESOLUÇÃO 001 - 2006 - alteradas as datas de vencimento para
+                                          pagamento em
+                                          cota única das Taxa de Fiscalização de Localização (TFL)...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_001_2009.doc"
+                                          target="_blank">RESOLUÇÃO 001 - 2009 - Institui procedimentos a serem
+                                          aplicados no fluxo
+                                          do contencioso para o Processo Administrativo Tributário</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_004_2006.pdf"
+                                          target="_blank">RESOLUÇÃO 004 - 2006 - Institui Comitês de Gestão do Projeto
+                                          ISS Mais
+                                          Fácil e Grupos de Trabalho de Acompanhamento e Fiscalização do Imposto sobre
+                                          Serviços
+                                          (ISS)</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_007_2010.doc"
+                                          target="_blank">RESOLUÇÃO 04 - 2010 - Dispõe sobre a realocação de servidores
+                                          no DFT,
+                                          alterando a designação feita através da Resolução nº 04 de 2009</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_008_2007.pdf"
+                                          target="_blank">RESOLUÇÃO 06 - 2008 - SEMEF - Alterar a composição da Junta de
+                                          Recursos
+                                          Fiscais...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_010_2007.doc"
+                                          target="_blank">RESOLUÇÃO 06 - 2010 - SEMEF - Para desenvolvimento das
+                                          atividades,
+                                          projetos e acompanhamento do Declan</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_015_2007.doc"
+                                          target="_blank">RESOLUÇÃO 007 - 2010 - Padronização de procedimentos de
+                                          fiscalização nas
+                                          ações fiscais que são desempenhadas pelos Auditores Fiscais</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_04_2010.doc"
+                                          target="_blank">RESOLUÇÃO 008 - 2007 - 1.ª Convocação dos sujeitos passivos do
+                                          Município
+                                          de Nova Iguaçu a realizarem o recadastramento de seus dados
+                                          cadastrais</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_06_2008.doc"
+                                          target="_blank">RESOLUÇÃO 08 - 2010 - Instaura a Comissão responsável pela
+                                          análise e
+                                          regulamentação do sistema de Nota Fiscal Eletrônica</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_06_2010.doc"
+                                          target="_blank">RESOLUÇÃO 09 - 2010 - Criar ?Grupo de Trabalho? no âmbito da
+                                          Secretaria
+                                          Municipal de Economia e Finanças</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_08_2010.doc"
+                                          target="_blank">RESOLUÇÃO 010 - 2007 - Institui procedimentos e papéis de
+                                          trabalho a serem
+                                          aplicados na Fiscalização do Imposto sobre Serviços (ISS)</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_09_2010.doc"
+                                          target="_blank">RESOLUÇÃO 10 - 2010 - Delegar poderes para assinar, receber,
+                                          enviar,
+                                          despachar e resolver todas as questões administrativas desta Secretaria, ao
+                                          Subsecretário
+                                          de Gestão de Receita</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_10_2010.doc"
+                                          target="_blank">RESOLUÇÃO 11_2010_Institui as Operações Fiscais, no que tange
+                                          a Alvará de
+                                          Licença para Localização, sobre as pessoas físicas e jurídicas...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_11_2010.doc"
+                                          target="_blank">RESOLUÇÃO 12 - 2010 - ANEXO</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_12_2010.xls"
+                                          target="_blank">RESOLUÇÃO 13 - 2010 - Institui regime de Plantão Fiscal
+                                          continuado na
+                                          Operação Diferença nas Declarações Mensais de Serviços ? DMS no período
+                                          2006-2010</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_13_2010.doc"
+                                          target="_blank">RESOLUÇÃO 14 - 2010 - Institui regime de Plantão Fiscal
+                                          continuado na
+                                          Operação Alvará de Licença para Localização, sobre as pessoas físicas e
+                                          jurídicas...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_14_2010.doc"
+                                          target="_blank">RESOLUÇÃO 015 - 2007 - Institui as normas relativas ao
+                                          parcelamento de
+                                          débitos dos tributos municipais para o ingresso das empresas no Simples
+                                          Nacional</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_15_2010.doc"
+                                          target="_blank">RESOLUÇÃO 15 - 2010 - Altera o art. 3º da Resolução de nº 11 -
+                                          2010</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_16_2010.doc"
+                                          target="_blank">RESOLUÇÃO 16 - 2010 - Credenciar Auditor Fiscal do Tesouro
+                                          Municipal para
+                                          planejamento e execução de Programa de Fiscalização nas Instituições
+                                          Financeiras
+                                          localizadas no Município</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_17_2010.doc"
+                                          target="_blank">RESOLUÇÃO 17 - 2010 - Designar a Auditora Fiscal ... para
+                                          elaborar e
+                                          preparar encaminhamento à PGM, de mudanças apontadas nos Relatórios das
+                                          Comissões...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_18_2010.doc"
+                                          target="_blank">RESOLUÇÃO 18 - 2010 - Institui o Grupo de Trabalho para
+                                          Elaboração da
+                                          Planta Genérica de Valores...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_22_2010.doc"
+                                          target="_blank">RESOLUÇÃO 22 - 2010 - Determina o início das ações fiscais
+                                          regulares nas
+                                          obras de construção civil</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_23_2010.doc"
+                                          target="_blank">RESOLUÇÃO 23 - 2010 - Determina o início dos procedimentos
+                                          fiscais
+                                          estabelecidos na Resolução nº 12 - 2010</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RESOLUCAO_(06A)_2010.doc"
+                                          target="_blank">RESOLUÇÃO SEM Nº (06A) - 2010 - Instaura a Comissão
+                                          responsável pelo
+                                          estudo para fins de alteração da Lei nº. 3.720-05</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RETIFICACAO_DA_RESOLUCAO_09_2010.doc"
+                                          target="_blank">RETIFICAÇÃO DA RESOLUÇÃO 09 - 2010</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/Resolucao/RETIFICACAO_DA_RESOLUCAO_(06A).doc"
+                                          target="_blank">RETIFICAÇÃO DA RESOLUÇÃO SEM Nº (06A)</a><br><br></p>
+                                    </p>
+                                 </div>
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Portarias</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 07_2010.doc"
+                                          target="_blank">PORTARIA 07 - 2010 - Resolve quanto ao Levantamento dos Bens
+                                          Patrimoniais
+                                          alocados nesta Secretaria</a><br><br>
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA%20SEMEF%2008%20-%202021.pdf"
+                                          target="_blank">PORTARIA 08 - 2021 - Estabelece Nova Modalidade Para
+                                          recolhimento do imposto sobre a Transmissão "Inter Vivos".</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 10_2010.doc"
+                                          target="_blank">PORTARIA 10 - 2010 - Instaura comissão responsável pelo
+                                          mapeamento e
+                                          propostas de modernização objetivando incremento no lançamento do
+                                          ISS</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 11_2010.doc"
+                                          target="_blank">PORTARIA 11 - 2010 - Instaura comissão responsável pelo
+                                          mapeamento e
+                                          propostas de modernização para o controle de Cobrança da Dívida Administrativa
+                                          e Dívida
+                                          Ativa</a><br><br>
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/ORTARIA%20SEMEF%2011%20-%202021.pdf"
+                                          target="_blank">PORTARIA 11 - 2021 - ALTERA A PORTARIA Nº 008/SEMEF/2021
+                                       </a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 12_2010.doc"
+                                          target="_blank">PORTARIA 12 - 2010 - Instaura comissão responsável pelo
+                                          mapeamento,
+                                          propostas de modernização e o controle das Transferências
+                                          Constitucionais</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 14_2010.doc"
+                                          target="_blank">PORTARIA 14 - 2010 - Instaura comissão responsável pelo
+                                          mapeamento e
+                                          proposta de novo do Regimento Interno desta secretaria</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 15_2010.doc"
+                                          target="_blank">PORTARIA 15 - 2010 - Instaura comissão responsável pela
+                                          revisão da
+                                          Legislação Tributária em vigor</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 16_2010.doc"
+                                          target="_blank">PORTARIA 16 - 2010 - Instaura comissão responsável pelo
+                                          mapeamento e
+                                          propostas de otimização da utilização dos sistemas de informação desta
+                                          secretaria</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 17_2010.doc"
+                                          target="_blank">PORTARIA 17 - 2010 - Instaura comissão responsável pelo
+                                          inventário dos
+                                          processos em trâmite nesta secretaria</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 18_2010.doc"
+                                          target="_blank">PORTARIA 18 - 2010 - Instaura comissão responsável pela
+                                          elaboração de
+                                          Relatório Conclusivo acerca da utilização do espaço físico destinado a esta
+                                          secretaria</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 020_2010.doc"
+                                          target="_blank">PORTARIA 020 - 2010 - SEMEF - Nova comissão de Acompanhamento
+                                          e
+                                          Fiscalização do Contrato nº 9912247215</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 021_2010.doc"
+                                          target="_blank">PORTARIA 021 - 2010 - SEMEF - Nova comissão de Acompanhamento
+                                          e
+                                          Fiscalização do Contrato nº 044-CPL-2008</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 024_2010.doc"
+                                          target="_blank">PORTARIA 024 - 2010 - SEMEF - Nova comissão responsável pelo
+                                          mapeamento e
+                                          propostas de novo Regimento Interno desta secretaria</a><br><br>
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA%20SEMEF%2025%20-%202019.pdf"
+                                          target="_blank">PORTARIA 025 - 2019 Determina a criação da Certidão de
+                                          Quitação ITBI </a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 026_2010.doc"
+                                          target="_blank">PORTARIA 026 - 2010 - SEMEF - Designa o servidor ... para
+                                          Tomador de
+                                          Adiantamento...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 027_2010.doc"
+                                          target="_blank">PORTARIA 027 - 2010 - SEMEF - Designa servidores para
+                                          cargos...</a><br><br>
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA%20SEMEF%2027%20-%202019.pdf"
+                                          target="_blank">PORTARIA 027 - 2019 - SEMEF - Regulamentação de
+                                          Documentação</a><br><br>
+                                    </p>
+
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 028_2010.doc"
+                                          target="_blank">PORTARIA 028 - 2019 - SEMEF - Regulamentação de Lei
+                                          Complementar Nº 068 de maio de 2019</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 029_2010.doc"
+                                          target="_blank">PORTARIA 029 - 2010 - SEMEF - Designa a servidora ... para
+                                          responder pela
+                                          Gerência do Departamento de Tributos Imobiliários...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 030_2010.doc"
+                                          target="_blank">PORTARIA 030 - 2010 - SEMEF - IGUAL A PORTARIA 019</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 031_2010.doc"
+                                          target="_blank">PORTARIA 031 - 2010 - SEMEF - IGUAL A PORTARIA 019 - Ofício
+                                          016</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 032_2010.doc"
+                                          target="_blank">PORTARIA 032 - 2010 - SEMEF - IGUAL A PORTARIA 019 - Ofício
+                                          017</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 034_2010.doc"
+                                          target="_blank">PORTARIA 034 - 2010 - SEMEF - IGUAL A PORTARIA 019 - Ofício
+                                          018</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 035_2010.doc"
+                                          target="_blank">PORTARIA 035 - 2010 - SEMEF - Designa o servidor ... para
+                                          responder pela
+                                          Assessoria Técnica - ASTEC do Gabinete do Secretário</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 36_2010.jpg"
+                                          target="_blank">PORTARIA 36 - 2010 - Designa o servidor ... para tomador de
+                                          adiantamento</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 001_2018.pdf"
+                                          target="_blank">PORTARIA 001 - 2018 - SEMEF - Regulamenta os artigos 160-A,
+                                          160-B e 160-C
+                                          da Lei Complementar 3.411-02, alterada pela Lei Complementar
+                                          055-17...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 005_2018.doc"
+                                          target="_blank">PORTARIA 005 - 2018 - SEMEF - Determina a redistribuição dos
+                                          Auditores
+                                          Fiscais no âmbito desta secretaria...</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 008_2018.doc"
+                                          target="_blank">PORTARIA 008 - 2018 - SEMEF - Prorroga o vencimento dos
+                                          boletos e guias
+                                          vencidos em Novembro de 2018 e dá outras providências</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 010_2019.pdf"
+                                          target="_blank">PORTARIA 010 - 2019 - SEMEF - Determina a criação do núcleo de
+                                          gerenciamento de ações fiscais na estrutura da Subsecretaria de Tributos e
+                                          Fiscalização</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 014_2019.pdf"
+                                          target="_blank">PORTARIA 014 - 2019 - SEMEF - Determina a criação do grupo
+                                          especial de
+                                          fiscalização e monitoramento de instituições financeiras</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 015_2019.pdf"
+                                          target="_blank">PORTARIA 015 - 2019 - SEMEF - Institui o programa de
+                                          fiscalizações de
+                                          ISSQN para o exercício de 2019</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA 017_2019.pdf"
+                                          target="_blank">PORTARIA 017 - 2019 - SEMEF - Regulamenta o procedimento de
+                                          compensação do
+                                          issqn das empresas de transporte publico de passageiros</a><br><br>
+                                    </p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/portarias/PORTARIA_CONJ_02_2019.pdf"
+                                          target="_blank">PORTARIA CONJUNTA 02 - 2019 - PGM/SEMEF - Dispõe sobre a
+                                          criação da
+                                          comissão de consolidação da Legislaçãp Tributária Municipal</a><br><br>
+                                    </p>
+                                    </p>
+                                 </div>
+                                 <!--14-10-21-->
+                                 <h5 class="title"><span class="fas fa-plus mr-1 text-800"
+                                       data-fa-transform="shrink-6 down-1.5"></span> Calendário Fiscal</h5>
+                                 <div class="content pl-5">
+                                    <p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/catrini/CATRINI 2021.pdf"
+                                          target="_blank">CATRINI 2021</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/catrini/CATRINI 2020.pdf"
+                                          target="_blank">CATRINI 2020</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/catrini/CATRINI 2019.pdf"
+                                          target="_blank">CATRINI 2019</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/catrini/CATRINI 2018.pdf"
+                                          target="_blank">CATRINI 2018</a><br><br></p>
+                                    <p><a href="http://app.novaiguacu.rj.gov.br:8090/pc/downloads/catrini/CATRINI 2017.pdf"
+                                          target="_blank">CATRINI 2017</a><br><br></p>
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end of .container-->
+               </section>
+               <!-- <section> close ============================-->
+               <!-- ============================================-->
+               <footer class="page-footer">
+                  <div class="bg-holder"
+                     style="background-image:url(assets/img/sidebars/legislacao.jpg);background-position: 0 51%; transform: scale(1.1);">
+                  </div>
+                  <!--/.bg-holder-->
+                  <div class="row justify-content-center">
+                     <div class="col-lg-10">
+                        <div class="row align-items-center">
+                           <div class="col-lg-6 text-lg-left">
+                              <p class="fs--1 text-uppercase ls font-weight-bold mb-0">
+                                 Copyright &copy; 2020 PMNI.
+                              </p>
+                           </div>
+                           <!--<div class="col-lg-6 text-lg-right mt-2 mt-lg-0">
+                                 <p class="fs--1 text-uppercase ls font-weight-bold mb-0">Feito by
+                                   <a class="text-light" href="https://dstec.com.br/">DSTEC</a>
+                                 </p>
+                                 </div>-->
+                        </div>
+                     </div>
+                  </div>
+               </footer>
+            </div>
+            <div class="col-lg-3 col-12 t-0 order-0 order-lg-1 position-absolute position-lg-relative">
+               <div class="h-lg-100vh sticky-top py-4 sticky-area">
+                  <span class="btn-close"><img class="d-none d-lg-block times" src="assets/img/times.svg" width="25"
+                        alt="" /><img class="d-lg-none" src="assets/img/times-black.svg" width="18" alt="" /></span>
+                  <div class="bg-holder" style="background-image:url(assets/img/sidebars/legislacao.jpg);">
+                  </div>
+                  <!--/.bg-holder-->
+                  <h1 class="page-title">Legislação</h1>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </main>
+   <!-- ===============================================-->
+   <!--    End of Main Content-->
+   <!-- ===============================================-->
+   <!-- ===============================================-->
+   <!--    JavaScripts-->
+   <!-- ===============================================-->
+   <script src="assets/js/jquery.min.js"></script>
+   <script src="assets/js/popper.min.js"></script>
+   <script src="assets/js/bootstrap.js"></script>
+   <script src="assets/js/plugins.js"></script>
+   <script src="assets/lib/prismjs/prism.js"></script>
+   <script src="assets/lib/loaders.css/loaders.css.js"></script>
+   <script src="assets/js/stickyfill.min.js"></script>
+   <script src="assets/lib/remodal/remodal.js"></script>
+   <script src="assets/lib/jtap/jquery.tap.js"></script>
+   <script src="https://www.google.com/recaptcha/api.js"></script>
+   <script
+      src="https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
+   <script src="assets/lib/owl.carousel/owl.carousel.js"></script>
+   <script src="assets/lib/isotope-layout/isotope.pkgd.min.js"></script>
+   <script src="assets/lib/isotope-packery/packery-mode.pkgd.min.js"></script>
+   <script src="assets/lib/lightbox2/js/lightbox.js"></script>
+   <script src="assets/lib/semantic-ui-accordion/accordion.min.js"></script>
+   <script src="assets/lib/semantic-ui-transition/transition.min.js"></script>
+   <script src="assets/lib/prismjs/prism.js"></script>
+   <script src="assets/js/stickyfill.min.js"></script>
+   <script src="assets/lib/sticky-kit/sticky-kit.min.js"></script>
+   <script src="assets/js/theme.js"></script>
+   <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARdVcREeBK44lIWnv5-iPijKqvlSAVwbw&callback=initMap"
+      async></script> -->
+
+</body>
+
+</html>
+
+<!-- INSERIR TAG GOOGLE -->
+
+
+
+<script>
+   $(document).ready(function () {
+      // $('#imagemPopup').modal('show');
+   });
+</script>
+</body>
+
+</html>
