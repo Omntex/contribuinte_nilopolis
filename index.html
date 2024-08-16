@@ -177,7 +177,7 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a data-toggle="modal" data-target="#modalPopup">
+                     <a href="#" data-toggle="modal" data-target="#modalPopup">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -516,22 +516,25 @@
 
 <script>
 
+   $(document).ready(function () {
+      // Remover a inicialização automática do modal
+      $('#modalPopup').modal({
+         show: false // Garante que o modal não abre automaticamente
+      });
+   });
+
+   // Habilita o botão "Confirmar" quando o checkbox é marcado
    document.getElementById('acceptTerms').addEventListener('change', function () {
       document.getElementById('submitBtn').disabled = !this.checked;
    });
 
+   // Abre o link em uma nova aba e fecha o modal
    document.getElementById('submitBtn').addEventListener('click', function () {
       // Abre o link em uma nova aba
-      window.open('https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php', '_blank');
+      window.open('https://www.exemplo.com', '_blank');
 
-      // Fecha o modal
-
+      // Fecha o modal usando o método do Bootstrap
       $('#modalPopup').modal('hide');
-   });
-
-
-   $(document).ready(function () {
-      // $('#imagemPopup').modal('show');
    });
 </script>
 </body>
