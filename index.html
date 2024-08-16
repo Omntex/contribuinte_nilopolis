@@ -87,8 +87,8 @@
    <main>
 
 
-      <div class="modal popup" style="cursor: pointer;" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopupLabel"
-         aria-hidden="true">
+      <div class="modal popup" style="cursor: pointer;" id="modalPopup" tabindex="-1" role="dialog"
+         aria-labelledby="modalPopupLabel" aria-hidden="true">
          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                <div class="modal-header">
@@ -177,7 +177,7 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a href="#modalPopup" style="cursor: pointer;" data-toggle="modal" data-target="#modalPopup">
+                     <a href="#" style="cursor: pointer;" onclick="openModal(); return false;">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -516,12 +516,10 @@
 
 <script>
 
-   $(document).ready(function () {
-      // Remover a inicialização automática do modal
-      $('#modalPopup').modal({
-         show: true // Garante que o modal não abre automaticamente
-      });
-   });
+   function openModal() {
+      // Abre o modal manualmente usando o método Bootstrap
+      $('#modalPopup').modal('show');
+   }
 
    // Habilita o botão "Confirmar" quando o checkbox é marcado
    document.getElementById('acceptTerms').addEventListener('change', function () {
