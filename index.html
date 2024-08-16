@@ -40,28 +40,32 @@
 </head>
 
 <style>
-    .sidebar-item-wrapper .ribbon {
-            position: absolute;
-            top: 10px;  /* Ajuste a posição vertical conforme necessário */
-            left: 10px;  /* Ajuste a posição horizontal conforme necessário */
-            background: rgba(0, 0, 0, 0.3);  /* Cor de fundo da ribbon com mais transparência */
-            color: #fff;  /* Cor do texto */
-            padding: 5px 10px;
-            font-size: 0.7em;
-            font-weight: bold;
-            border-radius: 5px;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-        }
+   .sidebar-item-wrapper .ribbon {
+      position: absolute;
+      top: 10px;
+      /* Ajuste a posição vertical conforme necessário */
+      left: 10px;
+      /* Ajuste a posição horizontal conforme necessário */
+      background: rgba(0, 0, 0, 0.3);
+      /* Cor de fundo da ribbon com mais transparência */
+      color: #fff;
+      /* Cor do texto */
+      padding: 5px 10px;
+      font-size: 0.7em;
+      font-weight: bold;
+      border-radius: 5px;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+   }
 
-        .sidebar-item-wrapper .ribbon i {
-            margin-right: 5px;
-        }
+   .sidebar-item-wrapper .ribbon i {
+      margin-right: 5px;
+   }
 
-        h2{
-            font-size: 1em !important;
-        }
+   h2 {
+      font-size: 1em !important;
+   }
 </style>
 
 <body>
@@ -83,17 +87,39 @@
    <main>
 
 
-      <div class="modal fade popup" id="imagemPopup" tabindex="-1" role="dialog" aria-labelledby="imagemPopupLabel"
+      <div class="modal fade popup" id="modalPopup" tabindex="-1" role="dialog" aria-labelledby="modalPopupLabel"
          aria-hidden="true">
          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                <div class="modal-header">
+                  <h5 class="modal-title" id="modalPopupLabel">Termo de Aceite</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                      <span aria-hidden="true">&times;</span>
                   </button>
                </div>
-               <div class="modal-body d-flex justify-content-center align-items-center">
-                  <img src="assets/img/banners/banner_contribuinte.png" width="750" alt="Imagem de Popup" class="">
+               <div class="modal-body">
+                  <!-- Conteúdo do termo -->
+                  <p>
+                     Declaro para todos os fins que as informações lançadas e os documentos anexados por meio do
+                     formulário
+                     utilizado para solicitação de isenção do Imposto Predial Territorial Urbano (IPTU) são verdadeiros,
+                     estando ciente de que CONSTITUI CRIME CONTRA A ORDEM TRIBUTÁRIA suprimir ou reduzir tributo
+                     omitindo
+                     informação ou prestando declaração falsa as autoridades fazendárias, na forma do que estabelece o
+                     art. 1°,
+                     I, da Lei Federal 8.137/1990, e do 98, I, do Código Tributário Municipal.
+                  </p>
+                  <!-- Checkbox -->
+                  <div class="form-check mt-4">
+                     <input class="form-check-input" type="checkbox" id="acceptTerms">
+                     <label class="form-check-label" for="acceptTerms">
+                        Declaro para todos os fins que as informações prestadas são verídicas, conforme descrito acima.
+                     </label>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                  <button type="button" class="btn btn-primary" id="submitBtn" disabled>Confirmar</button>
                </div>
             </div>
          </div>
@@ -131,7 +157,7 @@
             <div class="position-relative w-lg-50 position-lg-fixed undefined" id="gridNav">
                <div class="row h-lg-100vh" style="overflow:auto">
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
+                     <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/1.jpg);">
                      </div>
                      <!--/.bg-holder-->
@@ -146,82 +172,84 @@
                   </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <!--data-content="taxas"-->
-                        <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/itbi/itbi_login.php"
-                           target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">ITBI - Imposto de Transmissão</h2>
-                           </div>
-                        </a>
+                     <!--data-content="taxas"-->
+                     <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
                      </div>
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/8.jpg);">
+                     <!--/.bg-holder-->
+                     <a href="#" target="blank" data-toggle="modal" data-target="#modalPopup">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">ITBI - Imposto de Transmissão</h2>
                         </div>
-                        <!--/.bg-holder-->
-                        <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
-                        <a href="#" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-user-check text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">ITBI <br>Validação de Certidão de Quitação</h2>
-                           </div>
-                        </a>
-                     </div>
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/4.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-newspaper text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">CND - Certidão Negativa de Débitos Imobiliários</h2>
-                           </div>
-                        </a>
-                     </div>
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/7.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="#"
-                           target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-check-circle text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Benefícios Fiscais Imobiliários</h2>
-                           </div>
-                        </a>
-                     </div>   
-
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/10.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/2via/index.php#2viaIss"
-                           target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-file-alt text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">2ª Via ISS - Imposto Sobre Serviços</h2>
-                           </div>
-                        </a>
-                     </div>
+                     </a>
+                  </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/8.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
+                     <a href="#" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-user-check text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">ITBI <br>Validação de Certidão de
+                              Quitação</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/4.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-newspaper text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">CND - Certidão Negativa de Débitos
+                              Imobiliários</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/7.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="#" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-check-circle text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Benefícios Fiscais Imobiliários</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/10.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/2via/index.php#2viaIss"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-file-alt text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">2ª Via ISS - Imposto Sobre Serviços
+                           </h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/2.jpg);">
                      </div>
                      <!--/.bg-holder-->
@@ -235,52 +263,55 @@
                   </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/15.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://www.jucerja.rj.gov.br/Servicos/Regin/ReginServicos" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-edit text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">JUCERJA/REGIN<br>
-                                 Sistema de Registro Empresarial Integrado
-                                 </h2>
-                           </div>
-                        </a>
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/15.jpg);">
                      </div>
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/14.jpg);">
+                     <!--/.bg-holder-->
+                     <a href="https://www.jucerja.rj.gov.br/Servicos/Regin/ReginServicos" target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-edit text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">JUCERJA/REGIN<br>
+                              Sistema de Registro Empresarial Integrado
+                           </h2>
                         </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-book-open text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">CND - Certidão Negativa de Débitos Empresariais</h2>
-                           </div>
-                        </a>
-                     </div>
-
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/17.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-calendar-check text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Autencidade de Certidão Negativa</h2>
-                           </div>
-                        </a>
-                     </div>
-          
+                     </a>
+                  </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/14.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-book-open text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">CND - Certidão Negativa de Débitos
+                              Empresariais</h2>
+                        </div>
+                     </a>
+                  </div>
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/17.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-calendar-check text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Autencidade de Certidão Negativa</h2>
+                        </div>
+                     </a>
+                  </div>
+
+
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/5.jpg);">
                      </div>
                      <!--/.bg-holder-->
@@ -294,7 +325,7 @@
                   </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
+                     <div class="ribbon"><i class="fas fa-building mr-1"></i>Empresarial</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/6.jpg);">
                      </div>
                      <!--/.bg-holder-->
@@ -308,36 +339,40 @@
                   </div>
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-home mr-1"></i><i class="fas fa-building mr-1"></i>Imobiliário/Empresarial</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/16.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/2via/index.php" target="blank">
-                           <div class="sidebar-item">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-folder text-white" style="font-size:35px"
-                                 aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Dívida Ativa<br> 2ª Via</h2>
-                           </div>
-                        </a>
+                     <div class="ribbon"><i class="fas fa-home mr-1"></i><i
+                           class="fas fa-building mr-1"></i>Imobiliário/Empresarial</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/16.jpg);">
                      </div>
+                     <!--/.bg-holder-->
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/2via/index.php"
+                        target="blank">
+                        <div class="sidebar-item">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-folder text-white" style="font-size:35px"
+                              aria-hidden="true"></i>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Dívida Ativa<br> 2ª Via</h2>
+                        </div>
+                     </a>
+                  </div>
 
 
-                     <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                     <div class="ribbon"><i class="fas fa-home mr-1"></i><i class="fas fa-building mr-1"></i>Imobiliário/Empresarial</div>
+                  <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
+                     <div class="ribbon"><i class="fas fa-home mr-1"></i><i
+                           class="fas fa-building mr-1"></i>Imobiliário/Empresarial</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/18.jpg);">
                      </div>
-                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php" target="blank">
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php"
+                        target="blank">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-envelope text-white" style="font-size:35px"
                               aria-hidden="true"></i>
-                              <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Dívida Ativa<br> Parcelamento</h2>
+                           <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Dívida Ativa<br> Parcelamento</h2>
                         </div>
                      </a>
-                  </div> 
-                               
+                  </div>
+
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-th-large mr-1"></i>Serviços Diversos</div>
+                     <div class="ribbon"><i class="fas fa-th-large mr-1"></i>Serviços Diversos</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/9.jpg);">
                      </div>
                      <!--/.bg-holder-->
@@ -351,7 +386,7 @@
                      </a>
                   </div>
 
-<!-- 
+                  <!-- 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
                         <div class="ribbon"><i class="fas fa-th-large mr-1"></i>Serviços Diversos</div>
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/11.jpg);">
@@ -367,19 +402,20 @@
 
 
                   <div class="col-6 col-sm-3 minh-25vh  sidebar-item-wrapper py-5" data-content="#">
-                        <div class="ribbon"><i class="fas fa-th-large mr-1"></i>Serviços Diversos</div>
-                        <div class="bg-holder" style="background-image:url(assets/img/navigation/12.jpg);">
-                        </div>
-                        <!--/.bg-holder-->
-                        <div class="sidebar-item">
-                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/legislativo/leis/consulta_leis.php" target="_blank">
-                              <i class="mb-2 mb-md-3 nav-icon fas fa-gavel text-white" style="font-size:35px"
+                     <div class="ribbon"><i class="fas fa-th-large mr-1"></i>Serviços Diversos</div>
+                     <div class="bg-holder" style="background-image:url(assets/img/navigation/12.jpg);">
+                     </div>
+                     <!--/.bg-holder-->
+                     <div class="sidebar-item">
+                        <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/legislativo/leis/consulta_leis.php"
+                           target="_blank">
+                           <i class="mb-2 mb-md-3 nav-icon fas fa-gavel text-white" style="font-size:35px"
                               aria-hidden="true"></i>
                            <h2 class="font-weight-light text-white fs-1 fs-xl-2 ">Legislações</h2>
-                        </div>
-                  </a>
                      </div>
-        
+                     </a>
+                  </div>
+
 
                </div>
             </div>
@@ -390,7 +426,7 @@
       <!-- ============================================-->
 
 
-   
+
 
       <!-- <div id="iarah-chat-balloon">
          <i style="font-size: 45px;" class="fab fa-whatsapp"></i>
@@ -479,6 +515,21 @@
 
 
 <script>
+
+   document.getElementById('acceptTerms').addEventListener('change', function () {
+      document.getElementById('submitBtn').disabled = !this.checked;
+   });
+
+   document.getElementById('submitBtn').addEventListener('click', function () {
+      // Abre o link em uma nova aba
+      window.open('https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php', '_blank');
+
+      // Fecha o modal
+      $('#modalPopup').fadeOut(500, function () {
+         $('#modalPopup').modal('hide');
+      });
+   });
+
    $(document).ready(function () {
       // $('#imagemPopup').modal('show');
    });
