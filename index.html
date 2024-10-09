@@ -177,7 +177,9 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/3.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a href="#" style="cursor: pointer;" onclick="openModal(); return false;">
+                     <a href="#" style="cursor: pointer;"
+                        data-url="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php"
+                        onclick="openModal(this); return false;">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-handshake text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -191,7 +193,8 @@
                      </div>
                      <!--/.bg-holder-->
                      <div class="ribbon "><i class="fas fa-home mr-1"></i> Imobilário</div>
-                     <a href="#" target="blank">
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/itbi/itbi_login.php"
+                        target="blank">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-user-check text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -222,7 +225,9 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/7.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a href="#" target="blank">
+                     <a href="#" style="cursor: pointer;"
+                        data-url="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php"
+                        onclick="openModal(this); return false;">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-check-circle text-white" style="font-size:35px"
                               aria-hidden="true"></i>
@@ -299,7 +304,7 @@
                      <div class="bg-holder" style="background-image:url(assets/img/navigation/17.jpg);">
                      </div>
                      <!--/.bg-holder-->
-                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/certidao.php"
+                     <a href="https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/arrecadacao/baw/veracidade_certidao.php"
                         target="blank">
                         <div class="sidebar-item">
                            <i class="mb-2 mb-md-3 nav-icon fas fa-calendar-check text-white" style="font-size:35px"
@@ -515,24 +520,30 @@
 
 
 <script>
+   function openModal(element) {
+      // Pega o URL do data-attribute
+      const url = element.getAttribute('data-url');
 
-   function openModal() {
-      // Abre o modal manualmente usando o método Bootstrap
+      // Desmarca o checkbox e desabilita o botão de confirmação
+      document.getElementById('acceptTerms').checked = false;
+      document.getElementById('submitBtn').disabled = true;
+
+      // Abre o modal
       $('#modalPopup').modal('show');
+
+      // Define o comportamento do botão Confirmar para abrir o link do data-attribute
+      document.getElementById('submitBtn').onclick = function () {
+         // Abre o link em uma nova aba
+         window.open(url, '_blank');
+
+         // Fecha o modal
+         $('#modalPopup').modal('hide');
+      };
    }
 
    // Habilita o botão "Confirmar" quando o checkbox é marcado
    document.getElementById('acceptTerms').addEventListener('change', function () {
       document.getElementById('submitBtn').disabled = !this.checked;
-   });
-
-   // Abre o link em uma nova aba e fecha o modal
-   document.getElementById('submitBtn').addEventListener('click', function () {
-      // Abre o link em uma nova aba
-      window.open('https://pmnilopolis.geosiap.net.br/pmnilopolis/websis/siapegov/administrativo/gpro/gpro_index.php', '_blank');
-
-      // Fecha o modal usando o método do Bootstrap
-      $('#modalPopup').modal('hide');
    });
 </script>
 </body>
